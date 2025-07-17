@@ -1,0 +1,95 @@
+.calling {
+    padding: 117px 98px;
+    background: url("../../images/calling-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 70.61px auto;
+    max-width: 1296px;
+    border-radius: 22.99px;
+    box-shadow: 0px 3.83px 42.14px 0px #00000012;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 28.26px;
+        left: 30.4px;
+        content: "";
+        background-image: url("../../images/small-person-1.png");
+        background-position: center;
+        background-size: cover;
+        width: 42.37px;
+        height: 42.37px;
+    }
+
+    &::after{
+         position: absolute;
+        bottom: 0.66px;
+        right: 133.76px;
+        content: "";
+        background-image: url("../../images/small-person-2.png");
+        background-position: center;
+        background-size: cover;
+        width: 42.37px;
+        height: 42.37px;
+    }
+
+    .calling__section {
+        column-gap: 62.76px;
+        max-width: 1099.87px;
+        margin: 0px auto;
+
+.square{
+    position: absolute;
+    bottom: 37.94px;
+    left: 131.44px;
+}
+
+        .calling__action {
+            max-width: 477.57px;
+            width: 100%;
+            row-gap: 39.23px;
+
+            h2 {
+                font-family: "Inter-semibold";
+                font-size: 23.54px;
+                line-height: 31.38px;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+
+            }
+
+            .custom-btn {
+                background: $color-primary;
+                border-radius: 34px;
+                padding: 9.53px 23.81px;
+                width: fit-content;
+
+                button {
+                    color: white;
+                }
+            }
+        }
+
+        .calling__content {
+            max-width: 559.54px;
+            width: 100%;
+
+            h4 {
+                font-family: "Inter-bold";
+                font-size: 17.65px;
+                line-height: 25.5px;
+                letter-spacing: 0px;
+                color: $text-color;
+            }
+
+            p {
+                font-family: "Inter";
+                font-size: 15.69px;
+                line-height: 23.54px;
+                letter-spacing: 0px;
+                color: $text-color;
+            }
+        }
+    }
+}

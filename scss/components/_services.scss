@@ -1,0 +1,103 @@
+.services {
+    padding: 72px 0px;
+
+    .services__content {
+        max-width: 871px;
+        width: 100%;
+        padding: 0;
+
+        .services__heading {
+            @include section-heading;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .services__subheading {
+            font-family: "Inter-medium";
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    .services__nav {
+        gap: 6px;
+        background-color: #D3ECFF;
+        border-radius: 40px;
+        padding: 10px 16px;
+
+        .nav-item {
+            padding: 10px 5px;
+            cursor: pointer;
+
+            p {
+                color: #000000;
+                font-size: 16px;
+                margin: 0;
+            }
+
+            &.active {
+                background-color: white;
+                font-weight: bold;
+                border-radius: 30px;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        }
+    }
+
+    .services__container {
+        padding-top: 45px;
+        padding-bottom: 73px;
+        gap: 154px;
+
+        .services__content {
+            gap: 20px;
+            max-width: 524px;
+            width: 100%;
+
+            h3 {
+                color: $color-primary;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0%;
+                margin: 0;
+            }
+
+            p {
+                color: $text-color;
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                margin: 0;
+            }
+
+            .services__items {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .services__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .services__content-img{
+        max-width: 617px;
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+
+
+.banner {
+    background-color: $color-primary;
+    margin-bottom: 10px;
+
+    .gx-32 {
+        column-gap: 32px;
+    }
+
+    .card-container {
+        max-width: 350px;
+        padding-left: 0;
+        padding-right: 0;
+        column-gap: 32px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 10px;
+            background-color: $white-color;
+            border-radius: 10px;
+            margin-top: -59px;
+            max-width: 350px;
+            width: 100%;
+
+            h2 {
+                font-family: "Inter-bold";
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $color-primary;
+                margin: 0;
+            }
+
+            p {
+                font-family: "Inter-medium";
+                color: $text-color;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.25;
+                letter-spacing: 0%;
+                margin: 0;
+            }
+        }
+    }
+
+
+
+    .banner__slider {
+        max-width: 952px;
+        padding-top: 86px;
+        padding-bottom: 59px;
+    }
+}

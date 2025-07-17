@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "abstracts/variables";
+@import "abstracts/fonts";
+@import "abstracts/mixinss";
+
+
+body{
+  font-family: "Inter";
+  z-index: -1;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1296px;
+    }
+}
+
+
+@import "components/banner";
+@import "components/bigCards";
+@import "components/blogs";
+@import "components/corousel";
+@import "components/faq";
+@import "components/form";
+@import "components/header";
+@import "components/hero";
+@import "components/map";
+@import "components/partnership";
+@import "components/price";
+@import "components/services";
+@import "components/calling";
+@import "components/footer";
+@import "components/timeline";
+

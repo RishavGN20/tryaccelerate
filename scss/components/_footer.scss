@@ -1,0 +1,77 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 30px;
+
+    .footer__menu {
+        max-width: 539px;
+
+        .footer__links {
+            row-gap: 20px;
+
+            h3 {
+                font-family: "Poppins-medium";
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $text-color;
+
+            }
+
+            ul {
+                li {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                    color: $text-color;
+
+                }
+            }
+        }
+    }
+
+    .footer__social {
+        max-width: 275px;
+        gap: 20px;
+
+        .company-logos {
+            column-gap: 20px;
+        }
+    }
+
+    .footer__divider {
+        max-width: 1216px;
+        margin: 10px auto;
+        height: 1px;
+        background-color: #CCCCCC;
+        margin-bottom: 12px;
+    }
+
+    .footer__bottom {
+        max-width: 785px;
+        margin: 0px auto;
+        padding: 10px;
+        margin-top: 22px;
+
+        .footer__bottom-links {
+            gap: 20px;
+
+            a {
+                color: $text-color;
+                font-family: "Inter";
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-decoration: underline;
+                text-decoration-style: solid;
+            }
+        }
+
+        p {
+            font-family: "Inter";
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.form {
+    .container {
+        padding: 81.57px 72.04px 81.84px 72.49px;
+        background-image: url("../../images/form-background.png");
+
+        .form__content {
+            gap: 10px;
+            max-width: 601px;
+        }
+
+        .form__control {
+            padding: 10px 20px;
+            max-width: 371px;
+            width: 100%;
+
+            form {
+                gap: 18px;
+
+                input {
+                    padding: 11.54px 21.82px 11.54px 18.81px;
+                    border-radius: 10px;
+                    border: 1.5px solid $text-color;
+                    background: transparent;
+                }
+
+                .btn {
+                    @include btn-style;
+                    width: 146px;
+                    height: 50px;
+                    padding: 10px 20px 12px 20px;
+                    font-family: "Inter-medium";
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+
+}

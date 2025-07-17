@@ -1,0 +1,115 @@
+.price {
+    padding: 72px 0px;
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+
+        .price__wrapper {
+            padding: 0px 41.87px;
+
+            .blue-divider {
+                background-color: #31A0FE;
+                width: 43.48px;
+                height: 3.7px;
+            }
+
+            .price__card-1 {
+                position: relative;
+                gap: 15.73px;
+                box-shadow: 0px 0px 23.13px 0px #00000014;
+                padding: 34px 55px 90px 55px;
+                max-width: 610px;
+                width: 100%;
+                max-height: 358px;
+
+                .price__circles {
+                    position: absolute;
+                    content: "";
+                    top: 9px;
+                    right: 35px;
+                    width: 100px;
+                    height: 80px;
+                    background-image: url('../images/before.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                h2 {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 52.74px;
+                    letter-spacing: 0.19px;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .price__items {
+                    gap: 15.73px;
+
+                    .price__item {
+                        gap: 5px;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .price__card-2 {
+                position: relative;
+                @include flex-center;
+                flex-direction: column;
+                gap: 17px;
+                box-shadow: 0px 0px 23.13px 0px #00000014;
+                padding: 34px 40px 57px 40px;
+                max-width: 610px;
+                width: 100%;
+                max-height: 358px;
+
+
+                .price__circles {
+                    position: absolute;
+                    content: "";
+                    bottom: 19px;
+                    right: 10px;
+                    width: 100px;
+                    height: 80px;
+                    background-image: url('../images/before.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                h2 {
+                    max-width: 301px;
+                    margin: 0px auto;
+                    width: 100%;
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 44px;
+                    letter-spacing: 0.1px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    max-width: 530px;
+                    width: 100%;
+                    text-align: center;
+                    margin: 0px auto;
+                }
+
+                .btn{
+                    @include btn-style;
+                }
+            }
+        }
+    }
+}

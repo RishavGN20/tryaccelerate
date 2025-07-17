@@ -1,0 +1,106 @@
+header {
+    box-shadow: 0px 4px 12px 0px #0000000D;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 100;
+
+    .navbar {
+padding: 18px 0px;
+        .navbar-brand {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .navbar-collapse {
+            flex-grow: 0;
+            gap: 32px;
+            padding: 10px 0px;
+
+            .navbar-nav {
+                .nav-item {
+
+                    .nav-link {
+                        color: #333333;
+                        padding: 10px;
+                    }
+                }
+
+                .dropdown {
+                    position: unset;
+
+                    .dropdown-menu {
+                        max-width: 1270px;
+                        width: 100%;
+                        transform: translate(-50%, 20px);
+                        border-radius: 24px;
+                        margin-top: 12px;
+                        left: 50%;
+                        box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.1);
+                        visibility: hidden;
+                        display: block;
+                        max-height: 0;
+                        opacity: 0;
+                        z-index: 999;
+                        transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+                        will-change: transform, opacity, max-height;
+                        overflow: hidden;
+
+                        .container {
+                            padding: 8px 20px;
+
+                            .menu-title {
+                                font-family: "Inter-medium";
+                                line-height: 16px;
+                                letter-spacing: 0%;
+                                text-align: left;
+                                color: #0094FF;
+                                border-bottom: 1px solid #B9B9B9;
+                                padding: 10px 0px;
+
+                            }
+
+                            .list-unstyled {
+                                li {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+
+                        &.show {
+                            opacity: 1;
+                            transform: translate(-50%, 0);
+                            visibility: visible;
+                            max-height: 120vh;
+                            z-index: 1000;
+                        }
+                    }
+
+                }
+
+            }
+
+            .custom-btn {
+                background-color: #0094FF;
+                color: white;
+                padding: 10px 20px;
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                line-height: 27.41px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                border-radius: 35px;
+                border: none;
+            }
+        }
+
+
+    }
+
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+}
