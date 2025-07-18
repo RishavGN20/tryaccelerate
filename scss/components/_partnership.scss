@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 72px 88px;
+    margin-bottom: 10px;
 
     h2 {
         padding: 10px;
@@ -13,7 +14,7 @@
     }
 
     .partnership__slider {
-        padding-top: 78px;
+        padding-top: 30px;
         width: 100%;
 
         .partnership__logo {
@@ -34,6 +35,7 @@
 
     .slider-2 {
         max-width: 1207px;
+        padding-top: 78px;
         padding-bottom: 107px;
     }
 }

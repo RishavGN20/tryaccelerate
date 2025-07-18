@@ -1,5 +1,12 @@
 .blogs {
-    padding: 72px 108px 14px 108px;
+    padding: 72px 0px 14px 0px;
+
+    .col-12 {
+        @media screen and (max-width:1199px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 
     .blogs__top {
         display: flex;
@@ -10,6 +17,9 @@
         >div:first-child {
             max-width: 446px;
             width: 100%;
+            @media screen and (max-width:767px){
+                width: 70%;
+            }
 
             h3 {
                 color: $text-color;
@@ -43,12 +53,33 @@
             padding: 20px 19px 12px 20px;
             background-color: #F4FAFF;
 
+            @media screen and (max-width:1199px) {
+                padding: 20px 12px 12px 12px;
+            }
+
             h4 {
                 margin: 0;
+                font-family: "Inter-semibold";
+                font-size: 20px;
+                line-height: 27px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                     @media screen and (max-width:1199px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
             }
 
             p {
                 margin: 0;
+                font-family:"Inter";
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                @media screen and (max-width:1199px){
+                    line-height: 22px;
+                }
             }
 
             .read-more {

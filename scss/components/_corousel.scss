@@ -1,16 +1,26 @@
     .corousel {
         padding-top: 95px;
-        margin-bottom: 146px;
+        padding-bottom: 126px;
+        margin-bottom: 10px;
 
         .corousel__top {
 
             padding-bottom: 48px;
             padding-left: 0;
             padding-right: 0;
+            align-items: flex-end;
+              @media screen and (max-width:991px){
+                    align-items: center;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
 
             div:first-child {
                 max-width: 871px;
                 width: 100%;
+                @media screen and (max-width:991px){
+                    width: 80%;
+                }
             }
 
             h2 {
@@ -20,6 +30,9 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 margin-bottom: 10px;
+                @media screen and (max-width:768px){
+                    font-size: 28px;
+                }
             }
 
             p {
@@ -34,21 +47,38 @@
             .arrow-icons {
                 margin-bottom: 20px;
                 cursor: pointer;
+                @media screen and (max-width:991px){
+                    margin-bottom: 0;
+                }
             }
         }
 
         .corousel__slider {
             margin-left: -24px;
 
+            @media screen and (max-width:1199px){
+                margin-left: 0;
+            }
             .corousel__card {
                 margin: 0px 24px;
                 margin-bottom: 20px;
-                padding: 18px 19px 27px 24px;
+                padding: 18px 19px 27.57px 24px;
                 display: flex;
+               
                 flex-direction: column;
                 background-color: $white-color;
                 box-shadow: 0px 7.67px 16.3px 0px #003B6B1A;
                 border-radius: 15.34px;
+                @media screen and (max-width:1400px){
+                    margin-left: 18px;
+                    margin-right: 18px;
+                }
+
+                  @media screen and (max-width:1199px){
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    padding: 15px 20px;
+                }
 
                 h4 {
                     margin: 0;
@@ -61,6 +91,7 @@
                 }
 
                 p {
+                    width: 100%;
                     margin: 0;
                     font-weight: 500;
                     color: $text-color;
@@ -71,7 +102,17 @@
 
                 .btn {
                     @include btn-style;
+                    padding: 10px 24.28px;
                     margin-top: 37px;
+                    font-family: "Inter-medium";
+                    font-size: 19.43px;
+                    line-height: 28.17px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                    @media screen and (max-width:991px){
+                        margin-top: 22px;
+                    }
                 }
             }
         }

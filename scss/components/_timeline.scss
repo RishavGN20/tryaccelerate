@@ -1,4 +1,5 @@
 .timeline {
+    margin-bottom: 10px;
     .timeline__call {
         gap: 32px;
 
@@ -110,6 +111,9 @@
 
                 img {
                     margin-bottom: 30px;
+                }
+                &.custom-margin{
+                    margin-bottom: 80px;
                 }
             }
         }

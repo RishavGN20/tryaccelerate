@@ -1,8 +1,24 @@
 .form {
+    padding: 72px 0px;
     .container {
-        padding: 81.57px 72.04px 81.84px 72.49px;
+        padding: 81.57px 0px;
         background-image: url("../../images/form-background.png");
 
+        @media screen and (max-width:1400px){
+            padding: 81.57px 72px;
+        }
+
+        .row{
+            max-width: 1152px;
+            margin: 0px auto;
+
+            .col-md-8{
+                padding: 0;
+            }
+            .col-md-4{
+                padding: 0;
+            }
+        }
         .form__content {
             gap: 10px;
             max-width: 601px;
