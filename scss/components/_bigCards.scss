@@ -5,10 +5,22 @@
         padding-bottom: 46px;
         padding-left: 0;
         padding-right: 0;
+        align-items: flex-end;
+          @media screen and (max-width:991px){
+                display: flex;
+                align-items: center;
+            }
 
         div:first-child {
             max-width: 871px;
             width: 100%;
+
+            @media screen and (max-width:991px){
+                width: 85%;
+            }
+             @media screen and (max-width:576px){
+                width: 78%;
+            }
         }
 
         h2 {
@@ -18,6 +30,13 @@
             line-height: 100%;
             letter-spacing: 0%;
             margin-bottom: 10px;
+
+            @media screen and (max-width:991px){
+                font-size: 28px;
+            }
+              @media screen and (max-width:576px){
+                font-size: 27px;
+            }
         }
 
         p {
@@ -37,11 +56,17 @@
 
     .big-cards__slider {
       margin-left: -24px;
+      @media screen and (max-width:768px){
+        margin-left: 0;
+      }
         .card-1 {
             background-image: url("../../images/big-card-img-3.png");
             background-repeat: no-repeat;
             background-position: bottom right;
             margin-bottom: 70px;
+            @media screen and (max-width:991px){
+                margin-bottom: 50px;
+            }
         }
 
         .card-2 {
@@ -59,9 +84,17 @@
         .big-cards__item {
             max-width: 400px;
             width: 100%;
+            margin-left: 24px;
+            margin-right: 24px;
             padding: 27px 20px;
             border-radius: 15.34px;
             box-shadow: 0px 7.67px 16.3px 0px #003B6B1A, 0px 29.72px 29.72px 0px #003B6B17, 0px 52.73px 40.27px 0px #003B6B0D, 0px 95.87px 46.98px 0px #003B6B03, 0px 95.87px 76.7px 0px #003B6B08;
+            @media screen and (max-width:1199px){
+                margin-left: 15px;
+                margin-right: 15px;
+                padding: 27px 15px;
+                max-width: unset;
+            }
 
             h2 {
                 margin-bottom: 10px;
@@ -70,6 +103,9 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 color: $text-color;
+                @media screen and (max-width:1199px){
+                    font-size: 27px;
+                }
             }
 
             p {
@@ -83,9 +119,16 @@
 
             a {
                 margin-top: 57px;
+                @media screen and (max-width:1199px){
+                    margin-top:15px;
+                }
             }
             ul{
                 padding-left: 20px;
+                gap: 24px;
+                @media screen and (max-width:1199px){
+                    gap: 15px;
+                }
             }
         }
     }

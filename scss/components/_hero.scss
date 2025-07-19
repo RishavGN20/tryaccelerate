@@ -16,6 +16,10 @@
         text-align: center;
         padding-bottom: 16px;
 
+        @media screen and (max-width:991px){
+            font-size: 40px;
+        }
+
     }
 
 
@@ -23,15 +27,31 @@
     .hero-subheading {
         @include p-style;
         margin-bottom: 40px;
+        @media screen and (max-width:991px){
+            margin-bottom: 30px;
+        }
     }
 
     .hero-slider {
         max-width: 952px;
         margin: 66px auto;
 
+        @media screen and (max-width:991px){
+            margin: 50px auto;
+        }
+
+            @media screen and (max-width:768px){
+            display: flex;
+            align-items: center;
+        }
         .hero-slide {
             @include flex-center;
             height: 70px;
+            @media screen and (max-width:768px){
+                height: unset;
+             display: flex;
+             align-items: center;
+            }
         }
     }
 
@@ -74,6 +94,10 @@
         background: $color-primary;
           border-radius: 34px;
           padding: 9.71px 24.28px;
+
+          @media screen and (max-width:991px){
+            padding: 5px 18px;
+          }
           button{
             color: white;
             

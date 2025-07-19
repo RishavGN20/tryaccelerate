@@ -10,6 +10,31 @@
     box-shadow: 0px 3.83px 42.14px 0px #00000012;
     position: relative;
 
+    @media screen and (max-width:1399px) {
+        max-width: 1140px;
+    }
+
+    @media screen and (max-width:1199px) {
+        max-width: 960px;
+        padding: 90px 60px;
+    }
+
+    @media screen and (max-width:991px) {
+        max-width: 720px;
+        padding: 80px 40px;
+    }
+
+    @media screen and (max-width:767px) {
+        max-width: 540px;
+        padding: 70px 24px;
+    }
+    @media screen and (max-width:576px){
+        margin: 0px 15px;
+        .container{
+            padding: 0;
+        }
+    }
+
     &::before {
         position: absolute;
         top: 28.26px;
@@ -20,10 +45,16 @@
         background-size: cover;
         width: 42.37px;
         height: 42.37px;
+
+        @media screen and (max-width:767px) {
+            top: 9.26px;
+            left: 15.4px;
+        }
+
     }
 
-    &::after{
-         position: absolute;
+    &::after {
+        position: absolute;
         bottom: 0.66px;
         right: 133.76px;
         content: "";
@@ -32,6 +63,12 @@
         background-size: cover;
         width: 42.37px;
         height: 42.37px;
+
+        @media screen and (max-width:991px) {
+            bottom: 15.66px;
+            right: 73.76px;
+
+        }
     }
 
     .calling__section {
@@ -39,16 +76,36 @@
         max-width: 1099.87px;
         margin: 0px auto;
 
-.square{
-    position: absolute;
-    bottom: 37.94px;
-    left: 131.44px;
-}
+        @media screen and (max-width:991px) {
+            column-gap: 40px;
+        }
+
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+            row-gap: 45px;
+        }
+
+        .square {
+            position: absolute;
+            bottom: 37.94px;
+            left: 131.44px;
+
+            @media screen and (max-width:991px) {
+                bottom: 25.94px;
+                left: 118.44px;
+            }
+
+        }
 
         .calling__action {
             max-width: 477.57px;
             width: 100%;
             row-gap: 39.23px;
+
+            @media screen and (max-width:991px) {
+                row-gap: 24.23px;
+            }
+
 
             h2 {
                 font-family: "Inter-semibold";
@@ -57,6 +114,10 @@
                 letter-spacing: 0%;
                 text-transform: capitalize;
 
+                @media screen and (max-width:991px) {
+                    font-size: 21px;
+                }
+
             }
 
             .custom-btn {
@@ -64,6 +125,10 @@
                 border-radius: 34px;
                 padding: 9.53px 23.81px;
                 width: fit-content;
+
+                @media screen and (max-width:991px) {
+                    padding: 6.53px 12.81px;
+                }
 
                 button {
                     color: white;

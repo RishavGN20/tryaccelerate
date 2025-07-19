@@ -1,5 +1,14 @@
 .timeline {
     margin-bottom: 10px;
+
+    @media screen and (max-width:1199px) {
+        .col-md-4,
+        .col-md-2,
+        .col-md-6 {
+            padding: 0;
+        }
+    }
+
     .timeline__call {
         gap: 32px;
 
@@ -93,7 +102,11 @@
                 max-width: 517.71px;
                 margin: 0px auto;
                 border-radius: 15.34px;
-                box-shadow: 0px 7.67px 16.3px 0px #003B6B1A, 0px 29.72px 29.72px 0px #003B6B17, 0px 52.73px 40.27px 0px #003B6B0D, 0px 95.87px 46.98px 0px #003B6B03, 0px 95.87px 76.7px 0px #003B6B08;
+                box-shadow: 0px 7.67px 16.3px 0px #003B6B1A;
+
+                @media screen and (max-width:1199px) {
+                    margin: 0px 10px;
+                }
 
                 h3 {
                     font-family: "Inter-bold";
@@ -112,7 +125,8 @@
                 img {
                     margin-bottom: 30px;
                 }
-                &.custom-margin{
+
+                &.custom-margin {
                     margin-bottom: 80px;
                 }
             }

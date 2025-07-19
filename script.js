@@ -1,3 +1,23 @@
+$(function () {
+    const scrollContainer = $('.timeline__cards-scroll');
+    const drawLine = $('.draw-line');
+    const defaultLine = $('.default-line');
+
+    scrollContainer.on('scroll', function () {
+        const scrollTop = scrollContainer.scrollTop();
+        const scrollHeight = scrollContainer[0].scrollHeight - scrollContainer.outerHeight();
+        const percent = scrollTop / scrollHeight;
+
+        const fullHeight = defaultLine.height();
+        const newHeight = percent * fullHeight;
+
+        drawLine.css('height', `${newHeight}px`);
+    });
+});
+
+
+
+
 $(document).ready(function () {
     $('.hero-slider').slick({
         slidesToShow: 7,
@@ -9,7 +29,21 @@ $(document).ready(function () {
         infinite: true,
         arrows: false,
         dots: false,
-        pauseOnHover: false
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }
+        ]
     });
 
     $('.banner__slider').slick({
@@ -37,7 +71,26 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         pauseOnHover: false,
-        rtl: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+              {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.slider-2').slick({
@@ -51,6 +104,20 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
 
     });
 
@@ -109,7 +176,7 @@ $(document).ready(function () {
         infinite: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1199,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -148,21 +215,21 @@ $(document).ready(function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded",function(){
-    const toggles=document.querySelectorAll(".toggle-icon");
-    toggles.forEach((toggle)=>{
-        toggle.addEventListener("click",function(){
-            const faqContent=toggle.closest(".faq__content");
-            const answer=faqContent.querySelector(".faq__answer");
+document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".toggle-icon");
+    toggles.forEach((toggle) => {
+        toggle.addEventListener("click", function () {
+            const faqContent = toggle.closest(".faq__content");
+            const answer = faqContent.querySelector(".faq__answer");
 
             answer.classList.toggle("visible");
 
-            if(answer.classList.contains("visible")){
-                 toggle.src="./images/cross.png";
+            if (answer.classList.contains("visible")) {
+                toggle.src = "./images/cross.png";
             }
-            else{
-               
-                toggle.src="./images/plus.png";
+            else {
+
+                toggle.src = "./images/plus.png";
             }
         })
     })

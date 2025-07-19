@@ -16,7 +16,7 @@
                 @media screen and (max-width:991px) {
                 padding: 0px;
             }
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:767px) {
                 padding: 0px 20px;
                 gap: 30px;
             }
@@ -35,6 +35,7 @@
                 max-width: 610px;
                 width: 100%;
                 max-height: 358px;
+               
 
                 @media screen and (max-width:1199px) {
                     padding: 40px 24px 40px 24px;
@@ -63,12 +64,13 @@
                 }
 
                 h2 {
-                    font-family: Montserrat;
-                    font-weight: 700;
+                    font-family: Montserrat-bold;
+              
                     font-size: 56px;
                     line-height: 52.74px;
                     letter-spacing: 0.19px;
                     margin: 0;
+                     color: $color-primary;
                 }
 
                 p {
@@ -133,13 +135,13 @@
                     max-width: 301px;
                     margin: 0px auto;
                     width: 100%;
-                    font-family: Montserrat;
-                    font-weight: 700;
+                    font-family: Montserrat-bold;
                     font-size: 32px;
                     line-height: 44px;
                     letter-spacing: 0.1px;
                     text-align: center;
                     margin: 0;
+                    color: $text-color;
                 }
 
                 p {
