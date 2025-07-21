@@ -24,7 +24,7 @@
         }
 
         h2 {
-            font-family: "Inter-bold";
+            font-family: $font-inter-bold;
             color: $text-color;
             font-size: 32px;
             line-height: 100%;
@@ -41,7 +41,7 @@
 
         p {
             margin: 0;
-            font-family: "Inter-medium";
+            font-family: $font-inter-medium;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0%;
@@ -98,7 +98,7 @@
 
             h2 {
                 margin-bottom: 10px;
-                font-family: "Inter-bold";
+                font-family: $font-inter-bold;
                 font-size: 32px;
                 line-height: 100%;
                 letter-spacing: 0%;
@@ -109,7 +109,7 @@
             }
 
             p {
-                font-family: "Inter-medium";
+                font-family: $font-inter-medium;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0%;

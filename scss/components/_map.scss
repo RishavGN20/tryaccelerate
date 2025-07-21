@@ -13,7 +13,7 @@
             width: 100%;
 
             h2 {
-                font-family: "Inter-semibold";
+                font-family: $font-inter-semibold;
                 font-size: 32px;
                 line-height: 42px;
                 letter-spacing: 0%;
@@ -21,7 +21,7 @@
             }
 
             p {
-                font-family: "Inter-semibold";
+                font-family: $font-inter-semibold;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0%;
@@ -62,14 +62,14 @@
                 }
 
                 h5 {
-                    font-family: "Inter-medium";
+                    font-family: $font-inter-medium;
                     font-size: 16px;
                     line-height: 100%;
                     letter-spacing: 0%;
                 }
 
                 p {
-                    font-family: "Inter";
+                    font-family: $font-inter-regular;
                     font-size: 12px;
                     line-height: 100%;
                     letter-spacing: 0%;

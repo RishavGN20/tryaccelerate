@@ -1,0 +1,48 @@
+.main-card {
+    padding: 40px 0px;
+
+    .main-card__content {
+        max-width: 467px;
+        margin-right: auto;
+
+        h1 {
+            font-family: $font-inter-semibold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 2%;
+            vertical-align: middle;
+            background: linear-gradient(to right, $color-primary, #005796);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+
+        }
+
+        p {
+            font-family: $font-inter-medium;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 2%;
+            vertical-align: middle;
+            margin-bottom: 32px;
+        }
+
+        .custom-btn {
+            @include btn-style;
+            border-radius: 24px;
+            line-height: 100%;
+            border: 2px solid $color-primary;
+            width: 166px;
+            height: 48px;
+        }
+    }
+
+    .main-card__image {
+        max-width: 614.34px;
+        margin-left: auto;
+        video {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

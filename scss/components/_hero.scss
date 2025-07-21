@@ -5,7 +5,7 @@
 
     .hero-heading {
         font-size: 44px;
-        font-family: 'Inter-semibold';
+        font-family: $font-inter-semibold;
         background: linear-gradient(to right, #0094FF, #005796);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -64,7 +64,7 @@
 
         .small-heading {
             color: $text-color;
-            font-family: "Inter-bold";
+            font-family: $font-inter-bold;
             font-size: 24px;
             line-height: 30px;
             letter-spacing: 0px;
@@ -72,7 +72,7 @@
         }
 
         p {
-            font-family: "Inter-medium";
+            font-family: $font-inter-medium;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
@@ -84,7 +84,7 @@
         gap: 10px;
 
         p {
-            font-family: "Inter-semibold";
+            font-family: $font-inter-semibold;
             font-size: 12px;
             line-height: 100%;
             letter-spacing: 0%;

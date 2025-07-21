@@ -24,7 +24,7 @@
             }
 
             h2 {
-                font-family: "Inter-bold";
+                font-family: $font-inter-bold;
                 color: $text-color;
                 font-size: 32px;
                 line-height: 100%;
@@ -37,7 +37,7 @@
 
             p {
                 margin: 0;
-                font-family: "Inter-medium";
+                font-family: $font-inter-medium;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0%;
@@ -104,7 +104,7 @@
                     @include btn-style;
                     padding: 10px 24.28px;
                     margin-top: 37px;
-                    font-family: "Inter-medium";
+                    font-family: $font-inter-medium;
                     font-size: 19.43px;
                     line-height: 28.17px;
                     letter-spacing: 0%;

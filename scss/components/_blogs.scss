@@ -59,7 +59,7 @@
 
             h4 {
                 margin: 0;
-                font-family: "Inter-semibold";
+                font-family: $font-inter-semibold;
                 font-size: 20px;
                 line-height: 27px;
                 letter-spacing: 0%;
@@ -72,7 +72,7 @@
 
             p {
                 margin: 0;
-                font-family:"Inter";
+                font-family:$font-inter-regular;
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0%;
@@ -93,7 +93,7 @@
                 padding: 6.5px 11.5px;
                 width: 88px;
                 height: 25px;
-                font-family: "Inter-bold";
+                font-family:$font-inter-bold;
                 font-size: 10.11px;
                 line-height: 100%;
                 letter-spacing: 0%;
